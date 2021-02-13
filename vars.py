@@ -27,3 +27,10 @@ x = update_global_var_perferred_method()
 print(
     "outside function after updating value in 'update_global_var_perferred_method': ", x
 )
+
+print('\n')
+print("Use the value of 'None' as a place holder for empty vars")
+b = None
+print(b)
+
+print("\nUse Booleans as 'True' & 'False'. This is case sensitive")

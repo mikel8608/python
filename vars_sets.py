@@ -19,7 +19,7 @@ def data_add():
 
 data_add()
 
-print('\nCast a list of values with relicated data in it to a Set')
+print('\nCast a list of values with duplicates to a Set to remove the dupes')
 print(set(data))
 
 print('\n*** Sets are UN-ORDERED collections of UNIQUE elements ***\n')

@@ -32,12 +32,19 @@ def delete_data():
   del data[0]
   show_data()
 
+def concatenate_data():
+  print('\nConcatinating 2 lists')
+  data2 = ['data2','data3']
+  print(data+data2)
+  show_data()
+    
 # Run Functions
 print('data: ',data)
 print("data, Show every 2nd entry: ",data[::2]) #see strings.py for more inof on [:::]
 print('random value selected from data:',random.choice(data),'\n')
 
-show_data()
+concatenate_data()
+#show_data()
 #append_data()
 #insert_data()
 #delete_data()
