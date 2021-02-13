@@ -3,19 +3,19 @@ appendMe = "line 2"
 
 
 def writeFile():
-    FileName = open("C:/Users/michael.lean/Downloads/Python/files_test.txt", "w")
+    FileName = open("C:/Users/michael.lean/AppData/Local/Documents_Work/python/files_test.txt", "w")
     FileName.write(writeMe)
     FileName.close()
 
 
 def appendFile():
-    FileName = open("C:/Users/michael.lean/Downloads/Python/files_test.txt", "a")
+    FileName = open("C:/Users/michael.lean/AppData/Local/Documents_Work/python/files_test.txt", "a")
     FileName.write("\n" + appendMe)
     FileName.close()
 
 
 def readFile():
-    FileName = open("C:/Users/michael.lean/Downloads/Python/files_test.txt", "r").read()
+    FileName = open("C:/Users/michael.lean/AppData/Local/Documents_Work/python/files_test.txt", "r").read()
     print("Output Raw data from file")
     print(FileName)
 
@@ -26,7 +26,7 @@ def readFile():
     print("\nPrint second value in the LIST: ", splitLines[1])
     # option 2
     readLines = open(
-        "C:/Users/michael.lean/Downloads/Python/files_test.txt", "r"
+        "C:/Users/michael.lean/AppData/Local/Documents_Work/python/files_test.txt", "r"
     ).readlines()
     print(
         "\nUse the readlines Function to create a LIST (NB: RETURN Char is also listed): ",
@@ -36,4 +36,5 @@ def readFile():
 
 # writeFile()
 # appendFile()
-readFile()
+#readFile()
+

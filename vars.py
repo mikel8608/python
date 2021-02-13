@@ -29,7 +29,7 @@ print(
 )
 
 print('\n')
-print("Use the value of 'None' as a place holder for empty vars")
+print("Use the value of 'None' as a place holder for empty vars. It is also the DEFAULT Return value for functions.")
 b = None
 print(b)
 

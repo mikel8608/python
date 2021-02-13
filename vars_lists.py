@@ -44,15 +44,14 @@ def concatenate_data():
   show_data()
 
 def sort_reverse_data():
-  print("\nSorted")
-  print(sorted(data_ints)) #py3, #py2 = print(data_ints.sort()) 
+  print('data_ints unsorted',data_ints)
+  print("data_ints Sorted Function",sorted(data_ints)) 
   
+  print('The .sort() & .reverse() functions update the list, so you can only assign/print the list after using the functions')
+  data_ints.sort()
+  print('data_ints after .sort()',data_ints)
   data_ints.reverse()
-  print(data_ints) # This doesn't work: print(data_ints.reverse())
-
-  list1 = ['physics', 'Biology', 'chemistry', 'maths']
-  list1.reverse()
-  print ("list now : ", list1)
+  print('data_ints after .reverse()',data_ints)
 
 
 # Run Functions
