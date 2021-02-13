@@ -10,6 +10,7 @@ Setup
       - Add the interpreter paths in vscode. then RESTART vscode.
 	- Install vscode packages
       - Bonus tip in Windows 10. If you don't have environment variable setup, and you type 'python' in VSCode terminal, it'll point to C:\Users\YourName\AppData\Local\Microsoft\WindowsApps\python.exe, which just opens up python link in Windows AppStore
+      - Create a file with all the imports you want to do. Then run: pip install -r <filepath/file>
 	- test: python --version.
 	  If error see below.
 	- create virtual env in python directory
@@ -50,6 +51,8 @@ Import modules
   
 
 Debug
+  - debug console (in terminal area)
+    type in variables to see values of them while debugging
 
 
 Git
