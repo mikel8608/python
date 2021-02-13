@@ -1,4 +1,5 @@
 import os
+import sys
 
 def show_all_env_vars():
   for key,value in os.environ.items():
@@ -15,4 +16,6 @@ def show_key_sys_vars():
 
 
 #show_all_env_vars()
-show_key_sys_vars()
+#show_key_sys_vars()
+
+print('Default Python Version on this System is:',sys.prefix)
