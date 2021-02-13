@@ -1,0 +1,53 @@
+Python VSCode
+
+Setup
+	- Install python
+      In Windows 10 you can choose to have several Python versions, usually under C:\Users\YourName\AppData\Local\Programs\Python\Python##. Just make sure you change Environment variables C:\Users\YourName\AppData\Local\Programs\Python\Python## and C:\Users\YourName\AppData\Local\Programs\Python\Python##\Scripts accordingly. 
+      - Dir: C:\Users\michael.lean\AppData\Local\Programs\Python\Python27
+             C:\Users\michael.lean\AppData\Local\Programs\Python\Python38
+      - Add both these paths to the Environment 'System Variables', not User.
+      - rename the pythyon exe's in c:\windows as these are used by default in vscode
+      - Add the interpreter paths in vscode. then RESTART vscode.
+	- Install vscode packages
+      - Bonus tip in Windows 10. If you don't have environment variable setup, and you type 'python' in VSCode terminal, it'll point to C:\Users\YourName\AppData\Local\Microsoft\WindowsApps\python.exe, which just opens up python link in Windows AppStore
+	- test: python --version.
+	  If error see below.
+	- create virtual env in python directory
+	  activate virtual env & confirm you are in the virtual env.
+	- Update pip if required: py -3 -m pip install --upgrade pip
+	- Intsall black formatter: In terminal type: pip install black
+	- py -m pip install --upgrade pip
+    - pip install boto3
+
+	  
+ERROR: Permission Denied when running python:
+		https://stackoverflow.com/questions/56974927/permission-denied-trying-to-run-python-on-windows-10
+		
+		- This is caused by a conflict with the version of Python that was recently added into the Windows Store. 
+		  It looks like this added two "stubs" called python.exe and python3.exe into the %USERPROFILE%\AppData\Local\Microsoft\WindowsApps folder, 
+		  and in my case, this was inserted before my existing Python executable's entry in the PATH.
+
+		- Fix
+		  - Move this entry below the correct Python folder (partially) corrected the issue.
+		  - Type: manage app execution aliases into the Windows search prompt and disable both of the store versions of Python.
+
+
+Virtual Environment
+  After opening python terminal, you can setup virtual env as follows.
+    Type: py -3 -m venv py3
+          -m  ...pass module
+	  	  -3  ...version of python for virtual env
+	  	  py3 ...virtual env folder to create in current location
+    To select/confirm you are using the venv. Check the python info in the taskbar. Click it to change env's.
+    - To setup other venv's to use the vscode can't find. Update settings.json with "python.pythonPath": "path\\..."
+    
+    - Activate virtual env: 	source .venv/Scripts/activate
+    - Deactivate virtual env: 	deactivate   
+  
+  
+Import modules
+  - in terminal type: pip install <module>  
+  
+
+Debug/Git Info
+  - https://www.youtube.com/watch?v=-nh9rCzPJ20  @50mins
