@@ -49,5 +49,24 @@ Import modules
   - in terminal type: pip install <module>  
   
 
-Debug/Git Info
+Debug
+
+
+Git
   - https://www.youtube.com/watch?v=-nh9rCzPJ20  @50mins
+    - setup settings.json
+      "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
+    - update settings for .git
+      git config --global user.name "fname lname"
+      git config --global user.email "email"
+    - Initialize repo in the git console in vscode.
+      - update .gitignore with .vscode, .venv, venv  and any other files you don't want saved.
+      - click ... and select stage all
+      - click tick button to commit
+      - click file to see diff
+      - login to github/mikel8608  & create a new repo
+        - git remote add origin https://github.com/mikel8608/python.git
+      - in vscode select 'push to'
+        If this hangs then run from cmd prompt for first push. git push origin master. It should prompt for login and data should upload
+      
+      
