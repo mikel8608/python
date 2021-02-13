@@ -2,12 +2,14 @@
   Lists can consist of various data types.
   Ordered
 '''
+import random
 
 print('\n*** Lists are indexed collections of non-unique elements ***\n')
 
 data = [1,2,'A','B',1]
 
 def show_data():
+  print('Showing Data')
   counter=0
   for val in data:
     print(counter,': ',val)
@@ -33,10 +35,11 @@ def delete_data():
 # Run Functions
 print('data: ',data)
 print("data, Show every 2nd entry: ",data[::2]) #see strings.py for more inof on [:::]
+print('random value selected from data:',random.choice(data),'\n')
 
 show_data()
-append_data()
-insert_data()
-delete_data()
+#append_data()
+#insert_data()
+#delete_data()
 
 print('\n*** Lists are indexed collections of non-unique elements ***\n')

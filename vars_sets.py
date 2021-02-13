@@ -7,15 +7,19 @@ Sets
   - Mutable, so you can add/delete, but not based on an index
 '''
 
-print('\n*** Sets are un-ordered collections of unique elements ***\n')
+print('\n*** Sets are UN-ORDERED collections of UNIQUE elements ***\n')
 
 data = {9,1,2,3,4,5,6,7,8,2,5}
 print(data)
 
 def data_add():
+  print('\nAdding the value:','A')
   data.add('A')
   print(data)
 
 data_add()
 
-print('\n*** Sets are un-ordered collections of unique elements ***\n')
+print('\nCast a list of values with relicated data in it to a Set')
+print(set(data))
+
+print('\n*** Sets are UN-ORDERED collections of UNIQUE elements ***\n')

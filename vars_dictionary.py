@@ -2,6 +2,8 @@
   you can have nested objects
   unordered
 '''
+import random
+
 print('\n*** Dictionaries {} are Key/Value Pairs ***\n')
 
 dict1 = {'one':1,'two':2,'three':3,'four':4}
