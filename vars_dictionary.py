@@ -13,8 +13,11 @@ dict3 = {'dictionary':{'eight':8,'nine':9}}
 def using_in_dict1():
   if 'one' in dict1:
     print('one is in dict1 keys')
+  if 'one' in dict1.keys():
+    print('one is in dict1.keys()')
   if 1 in dict1.values():
-    print('1 is in dict1 values')
+    print('1 is in dict1.values()')
+
 
 def basic_output():
   print('dict1:',dict1)
