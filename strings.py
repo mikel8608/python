@@ -49,7 +49,7 @@ def var_substitution():
   val = 'Geeks'
   print(f"{val}for{val} is a portal for {val}.")
 
-var_substitution()
+var_substitution()  # doesn't work for some reason. Should work for py v3.6 and later
 exit()
 
 formatting_output()
