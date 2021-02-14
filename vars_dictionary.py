@@ -10,6 +10,12 @@ dict1 = {'one':1,'two':2,'three':3,'four':4}
 dict2 = {'list':[5,6,7]}
 dict3 = {'dictionary':{'eight':8,'nine':9}}
 
+def using_in_dict1():
+  if 'one' in dict1:
+    print('one is in dict1 keys')
+  if 1 in dict1.values():
+    print('1 is in dict1 values')
+
 def basic_output():
   print('dict1:',dict1)
   print('dict2:',dict2)
@@ -22,6 +28,19 @@ def basic_output():
 
 
 def itterate_dict1():
+  print('\nShow Default output which is the "key". Remember Dictionaries are UN-ORDERED')
+  for item in dict1:
+    print(item)
+
+  print('\nShow (key,value) output')
+  for item in dict1.items():
+    print(item)
+
+  print('\nUse Tuple Unpacking to see individual elements')
+  for k,v in dict1.items():
+    print('Key:',k,'Value:',v)
+
+  exit()
   print('\nShow Values')
   print(dict1.values())
   cnt=0
@@ -65,6 +84,7 @@ def nested():
 
   print("\nIndex 2 of the 'Skills' Key:",emp['Skills'][1])
 
+using_in_dict1()
 #basic_output()
 #itterate_dict1()
 #selectvalue_dict1()    

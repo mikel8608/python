@@ -1,3 +1,8 @@
+
+'''
+   open file modes: w,r,a,r+(read/write),w+(read/write: overrides or creates new file)
+'''
+
 writeMe = "line 1"
 appendMe = "line 2"
 file = "C:/Users/michael.lean/AppData/Local/Documents_Work/python/files_test.txt"
@@ -13,6 +18,11 @@ def appendFile():
     fileName.write("\n" + appendMe)
     fileName.close()
 
+    with open(file,'a') as f:
+        f.write('\nAppend line')
+    
+    
+
 
 def readFile():
     fileName1 = open(file, "r").read()
@@ -27,8 +37,11 @@ def readFile():
     print('\nTo Re-Read file you need to set Seek(0)')
     fileName2.seek(0)
     print(f2)
-
     fileName2.close()
+
+    print("Use 'with'")
+    with open(file,'r') as f:
+        print(f.read())
 
 
 def splitlinesFile():
@@ -48,22 +61,26 @@ def splitlinesFile():
     print(readLines)
 
 
-
 def readlines_file():
     print('Output each line into a list that includes the RETURN char')
     f = open(file,"r").readlines()
     print(f)
 
+
 def open_with_file():
     print("When using 'with, you don't need to close the file after")
-    with open(file) as f:
-        contents = f.read()
+    with open(file,'r') as f:
+        print(f.read())
+    
+    print("Assign file to variable")
+    with open(file) as f2:
+        contents = f2.read()
     print(contents)
 
 
-# writeFile()
-# appendFile()
-# readFile()
-# readlines_file()
-# splitlinesFile()
-open_with_file()
+#writeFile()
+#appendFile()
+readFile()
+#readlines_file()
+#splitlinesFile()
+#open_with_file()

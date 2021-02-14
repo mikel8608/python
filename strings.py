@@ -44,10 +44,9 @@ def format_function():
   print('format():',msg)
 
 def var_substitution():
-  #var1='value1'; var2='value2'
-  #print(f"{var1} - {var2}")
-  val = 'Geeks'
-  print(f"{val}for{val} is a portal for {val}.")
+  ''' Note: print(f'') will only run in terminal '''
+  var1='value1'; var2='value2'
+  print(f'{var1} - {var2}')
 
 var_substitution()  # doesn't work for some reason. Should work for py v3.6 and later
 exit()
