@@ -13,7 +13,7 @@ def list_index(target):
 
 def find_index(target, search_pattern):
     """
-    ▐ Find the index value of a search value.
+    ▐ Find the index value of a search pattern.
     ▐ Assign the value of each item in target to 'value'
     ▐ check if that value matches the search pattern.
     ▐ if it does, return the enumerated index value as i.

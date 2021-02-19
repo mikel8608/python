@@ -1,4 +1,5 @@
 # Functions
+# Naming convention is: lowercase with underscores.
 
 # Define function without params
 def no_parameters():
